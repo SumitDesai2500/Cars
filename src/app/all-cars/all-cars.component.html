@@ -1,0 +1,27 @@
+<div  class="container">
+    <div class="col-lg-12 col-sm-12 col-xs-12">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <td>companyname</td>
+                    <td>carmodel</td>
+                    <td>carcolor</td>
+                    <td>dateofpurchase</td>
+                    <td>Price</td>
+                    <td>Remove Car</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let car of cars ">
+                        <td>{{car.companyname}}</td>
+                        <td>{{car.carmodel}}</td>
+                        <td>{{car.carcolor}}</td>
+                        <td>{{car.dateofpurchase}}</td>
+                        <td>{{car.price}}</td>
+                        <td><button class="btn btn-danger"(click)= "removeCar(car.companyname)" >Delete</button></td>
+                </tr>
+            </tbody>
+
+        </table>
+    </div>
+</div>

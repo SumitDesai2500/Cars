@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-lg-12 col-sm-12 col-xs-12">
+            
+            
+            <input type="text" placeholder="enter companyname" name=" companyname"  class="form-control"  [(ngModel)]= "_companyname">
+            
+        </div>
+        
+        <div class="col-lg-3 col-sm-12 col-xs-12">
+            <button type="button" class="btn btn-info" (click)="findByCompanyname()">search</button>
+        </div>
+    </div>
+    <h2 class="mt-5">Result</h2>
+    <div class="col-lg-12 col-sm-12 col-xs-12">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <td>companyname</td>
+                    <td>carmodel</td>
+                    <td>carcolor</td>
+                    <td>dateofpurchase</td>
+                    <td>price</td>
+
+                   </tr>
+                </thead>
+                <tbody>
+                  
+                   <tr >
+                      <td>{{car.companyname}}</td>
+                      <td>{{car.carmodel}}</td>
+                      <td>{{car.carcolor}}</td>
+                      <td>{{car.dateofpurchase}}</td>
+                      <td>{{car.price}}</td>
+                    </tr> 
+                  
+                
+
+                </tbody>
+            </table>
+        </div>
+</div>
